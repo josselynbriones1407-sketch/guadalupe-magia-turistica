@@ -1,26 +1,39 @@
 import { createFileRoute } from "@tanstack/react-router";
+import { Header } from "@/components/site/Header";
+import { Hero } from "@/components/site/Hero";
+import { Highlights } from "@/components/site/Highlights";
+import { Gallery } from "@/components/site/Gallery";
+import { Directory } from "@/components/site/Directory";
+import { Footer } from "@/components/site/Footer";
 
 export const Route = createFileRoute("/")({
   component: Index,
+  head: () => ({
+    meta: [
+      { title: "Municipalidad de Guadalupe — Turismo, Cultura y Tradición en La Libertad" },
+      {
+        name: "description",
+        content:
+          "Descubre Guadalupe, La Libertad: turismo, cultura, gastronomía y agenda de festividades del distrito.",
+      },
+      { property: "og:title", content: "Descubre la magia de Guadalupe — La Libertad, Perú" },
+      { property: "og:description", content: "Tradición, historia y sabor en La Libertad." },
+      { property: "og:type", content: "website" },
+    ],
+  }),
 });
 
-// IMPORTANT: Replace this placeholder. For sites with multiple pages (About, Services, Contact, etc.),
-// create separate route files (about.tsx, services.tsx, contact.tsx) — don't put all pages in this file.
-function PlaceholderIndex() {
+function Index() {
   return (
-    <div
-      className="flex min-h-screen items-center justify-center"
-      style={{ backgroundColor: "#fcfbf8" }}
-    >
-      <img
-        data-lovable-blank-page-placeholder="REMOVE_THIS"
-        src="https://cdn.gpteng.co/blank-app-v1.svg"
-        alt="Your app will live here!"
-      />
+    <div className="min-h-screen bg-background">
+      <Header />
+      <main>
+        <Hero />
+        <Highlights />
+        <Gallery />
+        <Directory />
+      </main>
+      <Footer />
     </div>
   );
-}
-
-function Index() {
-  return <PlaceholderIndex />;
 }
