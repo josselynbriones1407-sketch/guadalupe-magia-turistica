@@ -49,7 +49,7 @@ const cards = [
 
 export function Highlights() {
   return (
-    <section className="py-24 bg-secondary/40">
+    <section className="relative py-24 bg-section-warm overflow-hidden">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="max-w-2xl mb-14">
           <span className="text-xs uppercase tracking-[0.3em] text-crimson font-semibold">Explora</span>

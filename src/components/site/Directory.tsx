@@ -9,7 +9,7 @@ const items = [
 
 export function Directory() {
   return (
-    <section id="directorio" className="py-24 bg-secondary/40">
+    <section id="directorio" className="relative py-24 bg-section-paper overflow-hidden">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="text-center max-w-2xl mx-auto mb-14">
           <span className="text-xs uppercase tracking-[0.3em] text-crimson font-semibold">Servicios</span>
