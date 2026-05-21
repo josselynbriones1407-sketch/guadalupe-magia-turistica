@@ -33,12 +33,12 @@ export function Header() {
       <div className="h-1 bg-tricolor" />
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16 md:h-20">
-          <a href="#inicio" className="flex items-center gap-3 text-primary-foreground">
+          <a href="#inicio" className={`flex items-center gap-3 transition-colors ${scrolled ? "text-primary" : "text-white"}`}>
             <div className="h-11 w-11 rounded-full bg-gold flex items-center justify-center shadow-glow">
               <MapPin className="h-5 w-5 text-gold-foreground" strokeWidth={2.5} />
             </div>
             <div className="leading-tight">
-              <p className="text-[10px] uppercase tracking-[0.2em] text-gold/90">Municipalidad Distrital</p>
+              <p className={`text-[10px] uppercase tracking-[0.2em] ${scrolled ? "text-crimson" : "text-gold/90"}`}>Municipalidad Distrital</p>
               <p className="font-display text-lg md:text-xl font-bold">Guadalupe</p>
             </div>
           </a>
@@ -48,7 +48,9 @@ export function Header() {
               <a
                 key={l.href}
                 href={l.href}
-                className="relative px-4 py-2 text-sm font-medium text-primary-foreground/85 hover:text-gold transition-colors after:content-[''] after:absolute after:left-4 after:right-4 after:bottom-1 after:h-[2px] after:bg-gold after:scale-x-0 hover:after:scale-x-100 after:transition-transform after:origin-left"
+                className={`relative px-4 py-2 text-sm font-medium transition-colors after:content-[''] after:absolute after:left-4 after:right-4 after:bottom-1 after:h-[2px] after:bg-gold after:scale-x-0 hover:after:scale-x-100 after:transition-transform after:origin-left ${
+                  scrolled ? "text-foreground/80 hover:text-primary" : "text-white/90 hover:text-gold"
+                }`}
               >
                 {l.label}
               </a>
@@ -57,7 +59,7 @@ export function Header() {
 
           <button
             onClick={() => setOpen((v) => !v)}
-            className="lg:hidden text-primary-foreground p-2 rounded-md hover:bg-white/10"
+            className={`lg:hidden p-2 rounded-md transition-colors ${scrolled ? "text-primary hover:bg-primary/10" : "text-white hover:bg-white/10"}`}
             aria-label="Abrir menú"
           >
             {open ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
@@ -66,14 +68,14 @@ export function Header() {
       </div>
 
       {open && (
-        <div className="lg:hidden bg-primary border-t border-white/10 animate-float-up">
+        <div className="lg:hidden bg-white/95 backdrop-blur-xl border-t border-border animate-float-up">
           <nav className="px-4 py-4 flex flex-col">
             {links.map((l) => (
               <a
                 key={l.href}
                 href={l.href}
                 onClick={() => setOpen(false)}
-                className="px-3 py-3 text-primary-foreground hover:text-gold border-b border-white/5"
+                className="px-3 py-3 text-foreground hover:text-primary border-b border-border/50"
               >
                 {l.label}
               </a>
