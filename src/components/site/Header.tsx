@@ -38,7 +38,6 @@ export function Header() {
               <MapPin className="h-5 w-5 text-gold-foreground" strokeWidth={2.5} />
             </div>
             <div className="leading-tight">
-              <p className={`text-[10px] uppercase tracking-[0.2em] ${scrolled ? "text-crimson" : "text-gold/90"}`}>Municipalidad Distrital</p>
               <p className="font-display text-lg md:text-xl font-bold">Guadalupe</p>
             </div>
           </a>
