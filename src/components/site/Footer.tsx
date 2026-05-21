@@ -11,7 +11,6 @@ export function Footer() {
               <MapPin className="h-5 w-5 text-gold-foreground" />
             </div>
             <div>
-              <p className="text-[10px] uppercase tracking-[0.25em] text-gold/90">Municipalidad Distrital</p>
               <p className="font-display text-xl font-bold">Guadalupe</p>
             </div>
           </div>
