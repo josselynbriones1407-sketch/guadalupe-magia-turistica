@@ -16,7 +16,7 @@ const items = [
 
 export function Gallery() {
   return (
-    <section id="galeria" className="py-24 bg-background">
+    <section id="galeria" className="relative py-24 bg-section-cream overflow-hidden">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="flex flex-wrap items-end justify-between gap-4 mb-12">
           <div>
