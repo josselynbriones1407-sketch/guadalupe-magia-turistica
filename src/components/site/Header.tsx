@@ -24,10 +24,10 @@ export function Header() {
 
   return (
     <header
-      className={`fixed top-0 inset-x-0 z-50 transition-all duration-300 ${
+      className={`fixed top-0 inset-x-0 z-50 transition-all duration-500 ${
         scrolled
-          ? "bg-primary/95 backdrop-blur-md shadow-elegant"
-          : "bg-primary/80 backdrop-blur-sm"
+          ? "bg-white/80 backdrop-blur-xl shadow-card-soft border-b border-white/40"
+          : "bg-gradient-to-b from-black/30 to-transparent backdrop-blur-sm"
       }`}
     >
       <div className="h-1 bg-tricolor" />
