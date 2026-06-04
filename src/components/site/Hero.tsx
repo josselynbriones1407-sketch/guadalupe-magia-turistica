@@ -28,13 +28,13 @@ export function Hero() {
           </span>
 
           <h1 className="mt-8 font-display text-5xl md:text-7xl lg:text-8xl font-bold leading-[1.02] tracking-tight">
-            Descubre la <span className="text-gradient-peru italic">magia</span>
+            Guadalupe, Tierra de <span className="text-gradient-peru italic">fe</span>
             <br />
-            de Guadalupe
+            y Tradición
           </h1>
 
           <p className="mt-8 max-w-2xl text-lg md:text-2xl text-primary-foreground/90 font-light leading-relaxed">
-            Tradición, historia y sabor en La Libertad.
+            Historia y sabor en La Libertad.
           </p>
 
           <div className="mt-12 flex flex-wrap gap-4">
