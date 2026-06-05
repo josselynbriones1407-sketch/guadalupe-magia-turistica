@@ -7,7 +7,7 @@ const items = [
     img: historia.url,
     tag: "Historia",
     title: "Historia de Guadalupe",
-    text: "Guadalupe, en la región de La Libertad, tiene sus orígenes en las culturas prehispánicas Moche y Chimú, destacando el centro ceremonial de Pacatnamú. Fue fundada por los españoles en 1550 por Francisco Pérez de Lezcano, quien llevó una imagen de la Virgen de Guadalupe desde España en 1560. Tras la destrucción de la ciudad original por un terremoto en 1619, fue reconstruida en su ubicación actual. Durante la Guerra del Pacífico, destacó por el sacrificio de Fernando Albújar, Manuel Guarniz y Justo Albañil, quienes fueron fusilados por proteger a la resistencia peruana. Hoy es una importante ciudad agrícola y uno de los principales centros arroceros y de fe mariana del norte del Perú.",
+    text: "Guadalupe, en la región La Libertad, tiene raíces en las culturas Moche y Chimú, destacando el complejo arqueológico de Pacatnamú. Fue fundada por los españoles en 1550 y reconstruida tras un terremoto en 1619. Durante la Guerra del Pacífico sobresalió por el heroísmo de Fernando Albújar, Manuel Guarniz y Justo Albañil. Actualmente, es un importante centro agrícola, arrocero y de devoción a la Virgen de Guadalupe en el norte del Perú.",
   },
   {
     img: pacatnamu.url,
