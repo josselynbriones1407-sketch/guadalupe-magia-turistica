@@ -52,8 +52,7 @@ export function Highlights() {
     <section className="relative py-24 bg-section-warm overflow-hidden">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="max-w-2xl mb-14">
-          <span className="text-xs uppercase tracking-[0.3em] text-crimson font-semibold">Explora</span>
-          <h2 className="mt-3 text-4xl md:text-5xl font-bold text-foreground">
+          <h2 className="text-4xl md:text-5xl font-bold text-foreground">
             Lo mejor de <span className="text-primary">Guadalupe</span>
           </h2>
           <p className="mt-4 text-muted-foreground text-lg">
