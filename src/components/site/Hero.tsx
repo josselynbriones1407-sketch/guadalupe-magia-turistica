@@ -43,7 +43,7 @@ export function Hero() {
               className="group relative inline-flex items-center gap-3 rounded-full bg-gold px-8 py-4 text-gold-foreground font-semibold shadow-glow hover:shadow-[0_0_80px_oklch(0.84_0.17_86/0.7)] hover:scale-105 transition-all duration-300"
             >
               <span className="absolute inset-0 rounded-full bg-gold blur-xl opacity-50 group-hover:opacity-80 transition-opacity -z-10" />
-              Explorar Ahora
+              Descubrir Guadalupe
               <ArrowRight className="h-5 w-5 group-hover:translate-x-1 transition-transform" />
             </a>
             <a
