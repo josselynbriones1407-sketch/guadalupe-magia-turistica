@@ -2,7 +2,7 @@ import { createFileRoute } from "@tanstack/react-router";
 import { Header } from "@/components/site/Header";
 import { Hero } from "@/components/site/Hero";
 import { Cultura } from "@/components/site/Cultura";
-import { Directory } from "@/components/site/Directory";
+
 import { Footer } from "@/components/site/Footer";
 
 export const Route = createFileRoute("/")({
