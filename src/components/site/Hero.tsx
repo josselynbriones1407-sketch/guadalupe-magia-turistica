@@ -28,7 +28,7 @@ export function Hero() {
           </span>
 
           <h1 className="mt-8 font-display text-5xl md:text-7xl lg:text-8xl font-bold leading-[1.02] tracking-tight">
-            Guadalupe, Tierra de <span className="text-gradient-peru italic">fe</span>
+            Guadalupe, Tierra de <span className="text-gradient-peru italic">Fe</span>
             <br />
             y Tradición
           </h1>
