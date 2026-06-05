@@ -1,4 +1,5 @@
 import { ArrowRight, Sparkles, Play } from "lucide-react";
+import heroVideo from "@/assets/hero-guadalupe.mp4.asset.json";
 
 export function Hero() {
   return (
@@ -10,10 +11,9 @@ export function Hero() {
         loop
         playsInline
         preload="auto"
-        poster=""
         className="absolute inset-0 w-full h-full object-cover"
       >
-        <source src="/videos/hero-guadalupe.mp4" type="video/mp4" />
+        <source src={heroVideo.url} type="video/mp4" />
       </video>
 
       {/* Overlay degradado elegante */}
