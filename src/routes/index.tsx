@@ -29,7 +29,7 @@ function Index() {
       <main>
         <Hero />
         <Cultura />
-        <Directory />
+        
       </main>
       <Footer />
     </div>
